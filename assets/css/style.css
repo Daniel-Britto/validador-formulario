@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(75, 50, 43), rgb(56, 18, 18));
+    font-family: sans-serif, helvetica;
+}
+
+form {
+    background: white;
+    width: 50%;
+    min-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+label::after {
+    content: '*';
+    color: red;
+    font-size: 1em;
+}
+
+.p-ajuda {
+    font-size: 0.6em;
+    color: grey;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 5px;
+    outline-color: rgb(96, 99, 98);
+}
+
+input.nome, input.sobrenome, input.email {
+    width: 50%;
+    min-width: 200px;
+}
+
+button {
+    padding: 10px 71px;
+    margin-top: 10px;
+
+}
+
+button:hover {
+    background-color: rgb(54, 112, 199);
+    border-color: white;
+}
+
+.txt-error {
+    font-size: 0.7em;
+    background-image: linear-gradient(to right, rgb(226, 103, 103), white);
+    padding: 5px;
+    border-left: 2px solid rgb(107, 6, 6);
+
+}

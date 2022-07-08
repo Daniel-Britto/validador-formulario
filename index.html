@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form action="/" method="get" class="formulario">
+        <fieldset>
+            <legend>Cadastro de usuário</legend>
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" class="nome validar" name="nome">
+            </p>
+            <p>
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" class="sobrenome validar" name="sobrenome">
+            </p>
+            <p>
+                <label for="nascimento">Nascimento</label>
+                <input type="date" class="nascimento validar" name="nascimento">
+            </p>
+            <p>
+                <label for="cpf">CPF</label>
+                <input type="number" class="cpf validar" name="cpf" placeholder="000.000.000-00">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" class="email validar" name="email" placeholder="name@gmail.com">
+            </p>
+            <p>
+                
+                <label for="usuario">Usuario</label>
+                <p class="p-ajuda">* Usuário só poderá conter letras e/ou números</p>
+                <p class="p-ajuda">* Usuário usuário deverá ter entre 3 e 12 caracteres</p>
+                <input type="text" class="usuario validar" name="usuario" >
+            </p>
+            <p>
+                <label for="senha">Senha</label>
+                <p class="p-ajuda">* Senha precisa ter entre 6 e 12 caracteres</p>
+                <input type="password" class="senha validar" name="senha" placeholder="****************">
+            <p>
+                <label for="repetir-senha">Repetir senha</label>
+                <input type="password" class="repetir-senha validar" name="repetir-senha" placeholder="****************">
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </fieldset>
+    </form>
+
+    <script type="module" src="./assets/js/validaFomulario.js"></script>
+</body>
+</html>
